@@ -5,6 +5,9 @@ edition = "2024"
 build = "build.rs"
 default-run = "bootstrap"
 
+[workspace]
+# Empty workspace to override parent workspace
+
 [features]
 build-metrics = ["sysinfo"]
 tracing = ["dep:tracing", "dep:tracing-chrome", "dep:tracing-subscriber", "dep:tracing-forest"]
